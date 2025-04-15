@@ -65,7 +65,7 @@ export default function BezierLearningRoute() {
     };
   };
 
-  // Calculate point on Bezier curve at parameter t using De Casteljau's algorithm
+  // Calculate point on Bezier curve at parameter t using De Casteljau s algorithm
   const getBezierPoint = (controlPoints, t) => {
     if (controlPoints.length === 1) {
       return controlPoints[0];
@@ -166,7 +166,7 @@ export default function BezierLearningRoute() {
                         : "hover:bg-blue-500"
                     }`}
                   >
-                    De Casteljau's Algorithm
+                    De Casteljau s Algorithm
                   </button>
                 </li>
                 <li>
@@ -342,7 +342,7 @@ export default function BezierLearningRoute() {
             </div>
             <p className="text-white">
               What makes Bezier curves so valuable is their intuitive behavior
-              and mathematical properties. They're smooth, easy to compute,
+              and mathematical properties. They re smooth, easy to compute,
               invariant under affine transformations, and contained within the
               convex hull of their control points.
             </p>
@@ -424,15 +424,15 @@ export default function BezierLearningRoute() {
           </div>
         </section>
 
-        {/* De Casteljau's Algorithm Section */}
+        {/* De Casteljau s Algorithm Section */}
         <section id="deCasteljau" className="mb-12">
           <div className="bg-black rounded-xl shadow-lg p-6">
             <h2 className="text-2xl font-bold mb-4 text-blue-600">
-              De Casteljau's Algorithm
+              De Casteljau s Algorithm
             </h2>
             <p className="mb-4">
               While the Bernstein polynomial formula defines Bezier curves
-              mathematically, De Casteljau's algorithm provides a more
+              mathematically, De Casteljau s algorithm provides a more
               intuitive, geometric way to compute points on a Bezier curve. This
               algorithm is both numerically stable and visually intuitive.
             </p>
@@ -447,7 +447,7 @@ export default function BezierLearningRoute() {
                 <li className="mb-2">
                   For a given parameter t between 0 and 1, compute a new set of
                   n points by linear interpolation between consecutive control
-                  points: P'ᵢ = (1-t)Pᵢ + tPᵢ₊₁ for i = 0, 1, ..., n-1
+                  points: P ᵢ = (1-t)Pᵢ + tPᵢ₊₁ for i = 0, 1, ..., n-1
                 </li>
                 <li className="mb-2">
                   Repeat this process on the new set of points, creating n-1
@@ -486,7 +486,7 @@ export default function BezierLearningRoute() {
                   Mathematical Expression
                 </h3>
                 <p className="mb-2 text-white">
-                  The recursive formula for De Casteljau's algorithm can be
+                  The recursive formula for De Casteljau s algorithm can be
                   expressed as:
                 </p>
                 <div className="bg-gray-100 p-4 rounded-lg text-black">
@@ -512,13 +512,13 @@ export default function BezierLearningRoute() {
             </div>
             <p className="mb-4">
               The algorithm visualized in the interactive demo above shows
-              exactly how De Casteljau's algorithm works. The colored lines
+              exactly how De Casteljau s algorithm works. The colored lines
               represent the intermediate steps of the algorithm, with the final
               point (in red) being the point on the Bezier curve.
             </p>
             <div className="bg-blue-50 p-4 rounded-lg">
               <h3 className="font-semibold mb-2 text-black">
-                Advantages of De Casteljau's Algorithm
+                Advantages of De Casteljau s Algorithm
               </h3>
               <ul className="list-disc pl-6 text-black">
                 <li>
@@ -574,8 +574,8 @@ export default function BezierLearningRoute() {
                   the endpoint to its adjacent control point:
                 </p>
                 <ul className="list-disc pl-6 mt-2">
-                  <li>B'(0) points from P₀ to P₁</li>
-                  <li>B'(1) points from Pₙ₋₁ to Pₙ</li>
+                  <li>B (0) points from P₀ to P₁</li>
+                  <li>B (1) points from Pₙ₋₁ to Pₙ</li>
                 </ul>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg">
@@ -640,7 +640,7 @@ export default function BezierLearningRoute() {
             </div>
             <p>
               To overcome these limitations, complex shapes typically use
-              multiple Bezier curves connected together in what's known as a
+              multiple Bezier curves connected together in what s known as a
               composite Bezier curve or spline, with various continuity
               constraints at the connecting points.
             </p>
@@ -735,7 +735,7 @@ export default function BezierLearningRoute() {
                   creating complex geometries.
                 </li>
                 <li>
-                  <strong>Font Rendering:</strong> Every character you're
+                  <strong>Font Rendering:</strong> Every character you re
                   reading right now is likely defined using Bezier curves in the
                   font file.
                 </li>
